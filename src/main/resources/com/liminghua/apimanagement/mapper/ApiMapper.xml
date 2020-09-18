@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liminghua.apimanagement.mapper.ApiMapper">
+    <resultMap id="ApiMap" type="com.liminghua.apimanagement.entity.Api">
+        <id property="id" column="id" />
+        <result property="apiName" column="api_name" />
+        <result property="apiUrl" column="api_url" />
+        <result property="apiSwitch" column="api_switch" />
+        <result property="apiDescription" column="api_description" />
+        <result property="apiMethod" column="api_method" />
+        <result property="apiClassName" column="api_class_name" />
+        <result property="apiType" column="api_type" />
+        <result property="apiResponse" column="api_response" />
+        <association property="apiTag" javaType="com.liminghua.apimanagement.entity.Tag" resultMap="TagMap"/>
+    </resultMap>
+    <resultMap id="TagMap" type="com.liminghua.apimanagement.entity.Tag">
+        <id property="id" column="tag_id" />
+        <result property="tagName" column="tag_name" />
+    </resultMap>
+    <update id="changeSwitch">
+        UPDATE api
+        SET
+        api_switch = #{apiSwitch}
+        WHERE id = #{apiId}
+    </update>
+    <select id="getAllInterface"  resultMap="ApiMap">
+        select
+        api.id,
+        api.api_url,
+        api.api_name,
+        api.api_type,
+        api.api_switch,
+        api.api_description,
+        api.api_class_name,
+        api.api_response,
+        api.api_method,
+        tag.id tag_id,
+        tag.tag_name
+        from api,tag
+        where api.api_tag_id = tag.id
+    </select>
+
+    <select id="getInterfaceByType"  resultMap="ApiMap">
+        select * from api where api_type = #{0}
+    </select>
+
+    <select id="getInterfaceById"  resultMap="ApiMap">
+        select
+        api.id,
+        api.api_url,
+        api.api_name,
+        api.api_type,
+        api.api_switch,
+        api.api_description,
+        api.api_class_name,
+        api.api_response,
+        api.api_method,
+        tag.id tag_id,
+        tag.tag_name
+        from api,tag
+        where api.api_tag_id = tag.id
+        and api.id = #{0}
+    </select>
+    <update id="updateApiById" parameterType="com.liminghua.apimanagement.entity.Api">
+        UPDATE api
+        <set>
+            <if test=" Api.apiSwitch != null ">
+            api_switch=#{Api.apiSwitch},
+            </if>
+            <if test=" Api.apiUrl !=null and Api.apiUrl !='' and Api.apiUrl != 'null' and Api.apiUrl != 'undefined'">
+            api_url=#{Api.apiUrl},
+            </if>
+            <if test=" Api.apiTag.id !=null ">
+            api_tag_id=#{Api.apiTag.id},
+            </if>
+            <if test=" Api.apiType !=null and Api.apiType !='' and Api.apiType != 'null' and Api.apiType != 'undefined'">
+            api_type=#{Api.apiType},
+            </if>
+            <if test=" Api.apiMethod !=null and Api.apiMethod !='' and Api.apiMethod != 'null' and Api.apiMethod != 'undefined'">
+            api_method=#{Api.apiMethod},
+            </if>
+            <if test=" Api.apiClassName !=null and Api.apiClassName !='' and Api.apiClassName != 'null' and Api.apiClassName != 'undefined'">
+            api_class_name=#{Api.apiClassName},
+            </if>
+            <if test=" Api.apiDescription !=null and Api.apiDescription !='' and Api.apiDescription != 'null'and Api.apiDescription != 'undefined'">
+                api_description=#{Api.apiDescription},
+            </if>
+            <if test=" Api.apiName !=null and Api.apiName !='' and Api.apiName != 'null' and Api.apiDescription != 'undefined'">
+                api_name=#{Api.apiName},
+            </if>
+            <if test=" Api.apiResponse !=null and Api.apiResponse !='' and Api.apiResponse != 'null' and Api.apiResponse != 'undefined'">
+                api_response=#{Api.apiResponse},
+            </if>
+        </set>
+        <where>
+            id=#{Api.id}
+        </where>
+    </update>
+    <delete id="deleteApiById">
+        delete from api where id = #{0}
+    </delete>
+</mapper>

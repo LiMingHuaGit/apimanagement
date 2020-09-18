@@ -1,0 +1,1024 @@
+2020-09-18 : 15:26:36.048[main]DEBUGc.liminghua.apimanagement.ApimanagementApplication-Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-18 : 15:26:37.846[main]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 15:26:37.853[main]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 15:26:37.870[main]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 15:28:27.152[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 15:28:27.153[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 15:28:27.155[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:28:27.155[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:28:27.156[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 15:28:27.156[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 15:28:27.156[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:28:27.156[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:28:27.157[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:28:27.157[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:27.157[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 15:28:27.157[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:28:27.158[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:27.159[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 15:28:27.160[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 4
+2020-09-18 : 15:28:32.815[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:32.816[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:28:32.816[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:28:33.476[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:33.476[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:28:33.477[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:34.231[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:34.231[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:28:34.232[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:34.919[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:34.919[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:28:34.920[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:36.125[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:36.125[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:28:36.126[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:36.574[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:36.575[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:28:36.576[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:37.303[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:37.303[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:28:37.304[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:28:38.560[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:38.560[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:28:38.560[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:39.498[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:39.498[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:28:39.499[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:28:43.033[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:43.033[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:28:43.035[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:44.528[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:44.528[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:28:44.529[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:45.395[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:45.395[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:28:45.396[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:48.039[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:48.039[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:28:48.040[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:48.710[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:48.710[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:28:48.711[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:49.784[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:49.784[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:28:49.785[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:50.776[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:50.776[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:28:50.777[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:28:52.080[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:28:52.080[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:28:52.081[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:29:02.721[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 15:29:02.721[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 15:29:02.721[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 15:29:02.721[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 15:29:02.721[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 15:29:02.721[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 15:29:02.722[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 15:29:02.722[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 15:29:02.722[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 15:29:02.723[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 15:29:02.723[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 15:29:02.725[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:03.277[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:29:03.278[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:29:03.278[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:29:03.279[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 15:29:03.279[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:03.280[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 15:29:03.280[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:29:03.280[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 4
+2020-09-18 : 15:29:06.464[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:06.464[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:29:06.465[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:29:10.863[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:10.863[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:29:10.864[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:11.570[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:11.571[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:29:11.571[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:29:16.480[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:16.481[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:29:16.481[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:17.039[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:17.039[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:29:17.040[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:17.600[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:17.600[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:29:17.601[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:18.291[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:18.292[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:29:18.292[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:18.843[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:18.843[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:29:18.844[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:20.342[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:20.342[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 15:29:20.343[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:21.002[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:21.002[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:29:21.003[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:24.653[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:24.653[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:29:24.654[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:25.828[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:25.828[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:29:25.828[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:26.590[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:26.590[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 15:29:26.591[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:27.513[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:27.513[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:29:27.514[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:30.358[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:30.358[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 15:29:30.358[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:31.543[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:31.543[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:29:31.544[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:32.296[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:32.296[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:29:32.296[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:36.332[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:36.332[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:29:36.333[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:37.367[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:37.367[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:29:37.368[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:38.325[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:38.325[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:29:38.326[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:29:39.550[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:29:39.550[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:29:39.550[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:30:12.640[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:30:12.640[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 15:30:12.640[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 15:30:12.640[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 15:30:12.641[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:30:12.642[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 4
+2020-09-18 : 15:30:12.651[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:30:12.651[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 15:30:12.653[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 15:30:12.655[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:30:12.655[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 15:30:12.656[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:30:12.657[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:12.657[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:30:12.658[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:18.093[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:18.094[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 15:30:18.095[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:20.903[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:20.903[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:30:20.904[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:21.519[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:21.519[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:30:21.519[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:23.625[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 15:30:23.625[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 15:30:23.626[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 4
+2020-09-18 : 15:30:23.629[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:30:23.629[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 15:30:23.630[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 15:30:23.631[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:30:23.631[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:30:23.631[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:23.632[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 15:30:23.632[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:30:23.632[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 15:30:23.632[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:30:23.632[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:30:23.632[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:25.989[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:25.989[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:30:25.990[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:30:26.804[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:26.804[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:30:26.805[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:27.395[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:27.395[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:30:27.396[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:27.814[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:27.814[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:30:27.815[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:28.259[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:28.259[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:30:28.260[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:30:29.936[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:29.936[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:30:29.936[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:30.487[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:30.487[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:30:30.487[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:31.341[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:31.341[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:30:31.341[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:32.085[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:32.085[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:30:32.086[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:32.743[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:32.744[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:30:32.744[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:34.491[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:34.492[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:30:34.492[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:30:41.917[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:41.917[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:30:41.919[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:42.817[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:42.817[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:30:42.817[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:43.844[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:43.844[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:30:43.845[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:44.589[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:44.589[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:30:44.590[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:45.360[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:45.360[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:30:45.361[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:30:47.734[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:30:47.734[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:30:47.735[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:31:02.610[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 15:31:02.610[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 15:31:02.610[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:31:02.610[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 15:31:02.611[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 4
+2020-09-18 : 15:31:02.611[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 15:31:02.612[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:31:02.612[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 15:31:02.612[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:31:02.612[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 15:31:02.612[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 15:31:02.612[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:31:02.613[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:31:02.613[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 15:31:02.613[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:31:07.080[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:31:07.081[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 15:31:07.081[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:31:08.535[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:31:08.535[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 15:31:08.535[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:31:09.659[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:31:09.659[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 15:31:09.660[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 15:31:24.823[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 15:31:24.823[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 15:31:24.823[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 15:33:09.980[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==>  Preparing: UPDATE api SET api_switch = ? WHERE id = ?
+2020-09-18 : 15:33:09.980[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==> Parameters: 0(Integer), 1(Integer)
+2020-09-18 : 15:33:09.983[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-<==    Updates: 1
+2020-09-18 : 15:37:34.356[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==>  Preparing: UPDATE api SET api_switch = ? WHERE id = ?
+2020-09-18 : 15:37:34.356[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==> Parameters: 1(Integer), 1(Integer)
+2020-09-18 : 15:37:34.361[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-<==    Updates: 1
+2020-09-18 : 15:37:48.473[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==>  Preparing: UPDATE api SET api_switch = ? WHERE id = ?
+2020-09-18 : 15:37:48.474[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==> Parameters: 0(Integer), 1(Integer)
+2020-09-18 : 15:37:48.477[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-<==    Updates: 1
+2020-09-18 : 16:01:57.489[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==>  Preparing: UPDATE api SET api_switch = ? WHERE id = ?
+2020-09-18 : 16:01:57.490[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==> Parameters: 1(Integer), 1(Integer)
+2020-09-18 : 16:01:57.496[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-<==    Updates: 1
+2020-09-18 : 16:02:03.280[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==>  Preparing: UPDATE api SET api_switch = ? WHERE id = ?
+2020-09-18 : 16:02:03.280[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==> Parameters: 0(Integer), 1(Integer)
+2020-09-18 : 16:02:03.283[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-<==    Updates: 1
+2020-09-18 : 16:02:12.527[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:12.527[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 16:02:12.532[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 0
+2020-09-18 : 16:02:23.555[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:23.555[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:02:23.556[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:26.156[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:26.156[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:02:26.157[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:26.766[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:26.766[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:02:26.767[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:27.919[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:27.919[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:02:27.920[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:29.155[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:29.155[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:02:29.156[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:29.762[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:29.762[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:02:29.763[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:30.157[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:30.157[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:02:30.157[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:30.775[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:30.775[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:02:30.776[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:31.132[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:31.132[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:02:31.133[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:31.496[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:31.496[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:02:31.497[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:31.932[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:31.932[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:02:31.933[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:32.320[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:32.320[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:02:32.320[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:40.542[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:02:40.542[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:02:40.543[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 4
+2020-09-18 : 16:02:40.545[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:02:40.545[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:02:40.545[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:02:40.546[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:02:40.546[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:02:40.546[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:02:40.547[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:02:40.547[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:02:40.548[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:02:40.553[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:02:40.553[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:02:40.554[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:05:00.500[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:05:00.500[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:05:00.500[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:05:00.500[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:05:00.501[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:05:00.501[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:05:00.501[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:05:00.501[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:05:00.501[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:05:00.501[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:05:00.502[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:05:00.502[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:05:00.509[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:05:00.509[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:05:00.510[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:05:02.659[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:05:02.659[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 28(Integer)
+2020-09-18 : 16:05:02.660[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:05:05.018[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==>  Preparing: UPDATE api SET api_switch = ? WHERE id = ?
+2020-09-18 : 16:05:05.018[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==> Parameters: 0(Integer), 28(Integer)
+2020-09-18 : 16:05:05.023[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-<==    Updates: 1
+2020-09-18 : 16:08:45.744[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:08:45.744[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:08:45.744[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:08:45.745[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:08:45.745[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:08:45.745[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:08:45.746[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:08:45.747[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 4
+2020-09-18 : 16:08:45.747[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 3
+2020-09-18 : 16:08:45.748[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:08:45.748[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:08:45.750[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:08:45.760[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:08:45.760[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:08:45.761[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:10:10.874[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:10:10.874[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:10:10.874[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:10:10.874[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:10:10.880[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:10:10.880[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:10:10.905[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:10:10.906[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:10:10.906[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:10:10.907[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:10.908[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:10:10.909[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:10.909[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:10:10.909[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:10:10.910[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:10:22.842[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:22.842[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:10:22.843[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:23.305[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:23.305[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:10:23.305[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:27.275[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:10:27.275[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:10:27.275[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:10:27.275[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:10:27.277[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:10:27.277[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:10:27.278[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:10:27.279[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:28.717[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:28.717[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:10:28.718[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:29.396[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:29.396[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:10:29.396[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:30.114[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:30.114[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:10:30.115[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:30.725[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:30.725[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:10:30.725[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:31.296[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:31.296[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:10:31.298[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:31.884[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:31.884[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:10:31.884[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:32.417[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:32.417[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:10:32.418[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:32.883[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:32.883[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:10:32.884[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:33.327[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:33.327[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:10:33.331[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:10:36.502[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:10:36.502[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:10:36.503[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:03.496[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.ApiMapper.updateApiById-==>  Preparing: UPDATE api SET api_switch=?, api_url=?, api_tag_id=?, api_type=?, api_method=?, api_class_name=?, api_description=?, api_name=? WHERE id=?
+2020-09-18 : 16:11:03.506[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.ApiMapper.updateApiById-==> Parameters: 0(Integer), /sysa/car/query/all(String), 1(Integer), GET(String), getAllCar(String), com.liminghua.api.sysa.controller.SysaController(String), 获取所有汽车,获取所有汽车(String), getAllCar(String), 29(Integer)
+2020-09-18 : 16:11:03.510[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.ApiMapper.updateApiById-<==    Updates: 1
+2020-09-18 : 16:11:06.671[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:06.671[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:11:06.672[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:09.421[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:11:09.421[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:11:09.423[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:11:09.424[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:11:09.424[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:11:09.424[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:11:09.424[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:11:09.424[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:11:09.424[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:11:09.425[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:11:09.425[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:11:09.426[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:09.426[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:11:09.426[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:09.427[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:11.013[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:11.014[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:11:11.014[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:22.340[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.ApiMapper.updateApiById-==>  Preparing: UPDATE api SET api_switch=?, api_url=?, api_tag_id=?, api_method=?, api_class_name=?, api_description=?, api_name=? WHERE id=?
+2020-09-18 : 16:11:22.341[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.ApiMapper.updateApiById-==> Parameters: 0(Integer), /error(String), 1(Integer), errorHtml(String), org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController(String), undefined,undefined(String), 错误页面(String), 30(Integer)
+2020-09-18 : 16:11:22.343[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.ApiMapper.updateApiById-<==    Updates: 1
+2020-09-18 : 16:11:25.977[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:25.977[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:11:25.978[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:26.362[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:26.363[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:11:26.364[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:26.787[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:26.787[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:11:26.788[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:27.218[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:27.218[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:11:27.218[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:28.139[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:28.140[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:28.142[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:28.496[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:28.496[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:11:28.497[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:28.818[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:28.818[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:11:28.819[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:29.159[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:29.159[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:11:29.159[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:29.465[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:29.465[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:11:29.465[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:29.779[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:29.779[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:11:29.779[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:34.065[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:34.065[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:11:34.066[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:34.495[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:34.495[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:34.496[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:34.862[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:34.863[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:11:34.863[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:35.162[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:35.162[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:11:35.163[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:35.446[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:35.446[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:11:35.447[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:36.372[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:11:36.372[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:11:36.372[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:11:36.373[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:36.373[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:11:36.373[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:11:36.375[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:11:36.375[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:11:36.375[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:36.377[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:11:36.377[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:11:36.377[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:11:40.501[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:11:40.501[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:11:40.501[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:11:40.501[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:11:40.501[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:11:40.501[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:40.502[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:11:40.502[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:11:40.502[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:40.502[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:11:40.503[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:11:40.504[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:11:43.372[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:11:43.372[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:11:43.373[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:11:44.087[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:11:44.087[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:44.088[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:11:45.180[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:11:45.181[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:11:45.181[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:11:45.181[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:11:45.181[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:11:45.181[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:11:45.182[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:11:45.183[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:11:45.183[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:11:45.183[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:45.184[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:45.185[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:45.188[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:11:45.188[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:11:45.189[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:11:45.955[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:45.955[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:11:45.957[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:46.434[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:46.435[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:11:46.435[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:46.855[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:46.855[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:11:46.856[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:47.228[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:47.229[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:11:47.229[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:47.575[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:47.575[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:11:47.576[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:47.918[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:47.918[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:11:47.918[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:11:48.758[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:11:48.758[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:11:48.759[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:12:29.642[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:12:29.642[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:12:29.643[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:12:30.106[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:12:30.106[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:12:30.107[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:12:30.523[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:12:30.523[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:12:30.523[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:12:30.898[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:12:30.898[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:12:30.898[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:12:31.255[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:12:31.255[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:12:31.255[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:12:59.110[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:12:59.111[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:12:59.111[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:12:59.111[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:12:59.111[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:12:59.111[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:12:59.111[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:12:59.112[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:12:59.113[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:12:59.115[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:12:59.116[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:12:59.117[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:13:02.109[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:13:02.109[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:13:02.110[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:05.369[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:05.369[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:37:05.369[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:37:05.369[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:05.370[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:37:05.370[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:37:05.370[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:37:05.370[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:37:05.370[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:05.371[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:37:05.371[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:05.371[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:37:06.455[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:06.455[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:06.455[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:37:06.455[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:37:06.455[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:37:06.455[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:37:06.456[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:37:06.457[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:37:06.458[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:37:06.459[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:37:06.459[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:06.460[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:37:06.463[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:06.463[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:37:06.464[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:37:07.132[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:37:07.132[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:07.132[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:37:07.132[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:07.132[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:37:07.132[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:37:07.133[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:37:07.133[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:07.133[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:37:07.133[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:37:07.133[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:07.134[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:37:08.557[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:08.557[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:37:08.557[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:37:08.557[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:08.557[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:37:08.558[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:37:08.558[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:37:08.558[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:08.558[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:37:08.558[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:08.558[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:37:08.559[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:37:10.485[http-nio-8888-exec-10]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:37:10.485[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:10.485[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:37:10.485[http-nio-8888-exec-10]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:37:10.485[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:10.485[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:37:10.486[http-nio-8888-exec-10]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:37:10.486[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:10.486[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:37:10.486[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:37:10.486[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:10.487[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:37:11.127[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:37:11.128[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:37:11.128[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:11.128[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:37:11.128[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:11.129[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:37:11.129[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:37:11.129[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:37:11.129[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:37:11.130[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:11.130[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:37:11.131[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:11.131[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:37:11.131[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:37:11.131[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:37:12.145[http-nio-8888-exec-6]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:37:12.145[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:37:12.145[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:12.145[http-nio-8888-exec-6]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:37:12.145[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:37:12.145[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:12.146[http-nio-8888-exec-6]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:37:12.146[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:12.146[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:37:12.146[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:37:12.146[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:12.147[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:37:13.571[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:13.571[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:13.571[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:37:13.571[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:37:13.572[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:37:13.572[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:37:13.572[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:13.572[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:37:13.572[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:37:13.572[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:37:13.572[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:37:13.573[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:37:13.575[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:37:13.575[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:37:13.577[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:37:14.152[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:37:14.152[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:37:14.153[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:37:14.153[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:37:14.153[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:14.153[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:14.153[http-nio-8888-exec-3]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:37:14.154[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:37:14.154[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:14.154[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:14.154[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:37:14.155[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:37:17.522[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:17.522[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:37:17.522[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:18.188[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:18.188[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:18.189[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:18.747[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:18.748[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:37:18.748[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:26.452[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:26.452[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:26.452[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:26.888[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:26.888[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:37:26.889[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:27.387[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:27.387[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:37:27.388[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:37:28.509[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:37:28.509[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:37:28.510[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:38:15.113[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:38:15.113[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:38:15.113[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:38:15.113[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:38:15.114[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:38:15.114[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:38:15.116[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:38:15.116[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:15.116[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:38:15.116[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:38:15.117[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:38:15.117[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:15.122[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:38:15.122[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:38:15.123[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:38:31.551[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:31.551[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:38:31.552[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:32.157[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:32.157[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:38:32.158[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:38.829[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:38.829[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:38:38.830[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:39.376[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:39.376[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:38:39.377[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:39.840[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:39.840[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:38:39.841[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:40.239[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:40.240[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:38:40.240[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:41.016[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:41.016[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:38:41.017[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:41.422[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:41.422[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:38:41.423[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:38:55.518[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:38:55.518[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:38:55.519[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:39:05.038[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==>  Preparing: UPDATE api SET api_switch = ? WHERE id = ?
+2020-09-18 : 16:39:05.039[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-==> Parameters: 1(Integer), 1(Integer)
+2020-09-18 : 16:39:05.042[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.ApiMapper.changeSwitch-<==    Updates: 1
+2020-09-18 : 16:39:33.167[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:39:33.167[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:39:33.167[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:22.965[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:22.965[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:45:22.965[http-nio-8888-exec-8]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:23.457[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:23.457[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:45:23.458[http-nio-8888-exec-6]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:23.902[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:23.902[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:45:23.903[http-nio-8888-exec-5]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:24.370[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:24.370[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:45:24.371[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:25.133[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:25.133[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 2(Integer)
+2020-09-18 : 16:45:25.133[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:25.786[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:25.786[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:45:25.787[http-nio-8888-exec-1]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:26.361[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:26.361[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 3(Integer)
+2020-09-18 : 16:45:26.361[http-nio-8888-exec-3]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:26.747[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:26.747[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 29(Integer)
+2020-09-18 : 16:45:26.749[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:27.271[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:27.271[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 6(Integer)
+2020-09-18 : 16:45:27.272[http-nio-8888-exec-2]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:27.782[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:45:27.782[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 30(Integer)
+2020-09-18 : 16:45:27.783[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:45:55.743[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:45:55.744[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:45:55.744[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:45:55.745[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:45:55.745[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:45:55.745[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:45:55.745[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:45:55.746[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:45:55.746[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:45:55.750[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:45:55.750[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:45:55.751[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:45:59.557[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:45:59.557[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:45:59.557[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:45:59.964[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:45:59.964[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:45:59.965[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:03.461[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:46:03.461[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:46:03.462[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:46:03.462[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:46:03.462[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:46:03.462[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:03.462[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:46:03.462[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:03.462[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:03.463[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:03.463[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:46:03.463[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-10]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-10]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-10]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:46:10.487[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:10.488[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:46:10.488[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:46:10.488[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:10.488[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:46:14.446[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:46:14.446[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:46:14.446[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:14.446[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:14.446[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:46:14.446[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:46:14.447[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:46:14.447[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:14.447[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:46:14.447[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:46:14.447[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:14.448[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:46:17.619[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:17.619[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:46:17.620[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:18.184[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:18.185[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:18.185[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:18.654[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:18.654[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:46:18.654[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:20.533[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:20.533[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:20.534[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:21.010[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:21.010[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:46:21.010[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:21.879[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:21.879[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:46:21.880[http-nio-8888-exec-9]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:46:22.359[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:46:22.359[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:46:22.360[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:52:54.912[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:52:54.912[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:52:54.913[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:53:08.591[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==>  Preparing: UPDATE job SET `name` = ?, group_id = ?, cron = ?, parameter = ?, jar_path = ?, status = ? WHERE id = ?
+2020-09-18 : 16:53:08.594[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==> Parameters: secondJob(String), 1(Integer), 0/10 * * * * ? (String), 测试参数(String), F:\GitRepository\apimanagement\jar\HelloJarJobSecond.jar(String), CLOSE(String), 11(Integer)
+2020-09-18 : 16:53:08.599[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-<==    Updates: 1
+2020-09-18 : 16:53:08.662[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:53:08.662[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:53:08.663[http-nio-8888-exec-10]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:54:07.507[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:54:07.507[http-nio-8888-exec-7]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:54:07.508[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:54:07.508[http-nio-8888-exec-7]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:54:07.508[http-nio-8888-exec-7]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:54:07.508[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:54:07.508[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:54:07.508[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:54:07.509[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:54:07.513[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:54:07.513[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:54:07.514[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:54:10.879[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:54:10.879[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:54:10.880[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:54:13.532[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==>  Preparing: UPDATE job SET `name` = ?, group_id = ?, cron = ?, parameter = ?, jar_path = ?, status = ? WHERE id = ?
+2020-09-18 : 16:54:13.533[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==> Parameters: secondJob(String), 1(Integer), 0/10 * * * * ? (String), 测试参数(String), F:\GitRepository\apimanagement\jar\HelloJarJobSecond.jar(String), OPEN(String), 11(Integer)
+2020-09-18 : 16:54:13.535[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-<==    Updates: 1
+2020-09-18 : 16:54:13.546[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:54:13.546[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:54:13.546[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:54:42.480[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:54:42.480[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-2]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:54:42.481[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:54:42.482[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:55:08.365[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:55:08.365[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:55:08.365[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:55:19.566[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==>  Preparing: UPDATE job SET `name` = ?, group_id = ?, cron = ?, parameter = ?, jar_path = ?, status = ? WHERE id = ?
+2020-09-18 : 16:55:19.566[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==> Parameters: firstJob(String), 1(Integer), 0/6 * * * * ? (String), 测试参数(String), F:\GitRepository\apimanagement\jar\HelloJarJobFirst.jar(String), CLOSE(String), 1(Integer)
+2020-09-18 : 16:55:19.569[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-<==    Updates: 1
+2020-09-18 : 16:55:19.579[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:55:19.579[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:55:19.580[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:55:43.834[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:55:43.834[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:55:43.834[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:55:43.834[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:55:43.835[http-nio-8888-exec-8]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:55:43.835[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:55:43.835[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:55:43.835[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:55:43.835[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:55:43.838[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:55:43.838[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:55:43.839[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:55:46.997[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:55:46.997[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:55:46.997[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:55:49.355[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==>  Preparing: UPDATE job SET `name` = ?, group_id = ?, cron = ?, parameter = ?, jar_path = ?, status = ? WHERE id = ?
+2020-09-18 : 16:55:49.355[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==> Parameters: secondJob(String), 1(Integer), 0/10 * * * * ? (String), 测试参数(String), F:\GitRepository\apimanagement\jar\HelloJarJobSecond.jar(String), CLOSE(String), 11(Integer)
+2020-09-18 : 16:55:49.360[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-<==    Updates: 1
+2020-09-18 : 16:55:49.370[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:55:49.370[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 11(Integer)
+2020-09-18 : 16:55:49.370[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:55:56.237[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id
+2020-09-18 : 16:55:56.237[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:55:56.237[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-==> Parameters: 
+2020-09-18 : 16:55:56.237[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:55:56.238[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: GET(String)
+2020-09-18 : 16:55:56.238[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: PUT(String)
+2020-09-18 : 16:55:56.238[http-nio-8888-exec-4]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:55:56.239[http-nio-8888-exec-10]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 4
+2020-09-18 : 16:55:56.239[http-nio-8888-exec-1]DEBUGc.l.apimanagement.mapper.ApiMapper.getAllInterface-<==      Total: 6
+2020-09-18 : 16:55:56.243[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==>  Preparing: select * from api where api_type = ?
+2020-09-18 : 16:55:56.243[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-==> Parameters: POST(String)
+2020-09-18 : 16:55:56.244[http-nio-8888-exec-9]DEBUGc.l.a.mapper.ApiMapper.getInterfaceByType-<==      Total: 0
+2020-09-18 : 16:55:56.245[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==>  Preparing: select api.id, api.api_url, api.api_name, api.api_type, api.api_switch, api.api_description, api.api_class_name, api.api_response, api.api_method, tag.id tag_id, tag.tag_name from api,tag where api.api_tag_id = tag.id and api.id = ?
+2020-09-18 : 16:55:56.245[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-==> Parameters: 1(Integer)
+2020-09-18 : 16:55:56.246[http-nio-8888-exec-7]DEBUGc.l.a.mapper.ApiMapper.getInterfaceById-<==      Total: 1
+2020-09-18 : 16:56:19.713[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:56:19.713[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:56:19.713[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:56:19.713[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:56:19.713[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:56:19.713[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:56:19.714[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:56:19.714[http-nio-8888-exec-5]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:56:19.714[http-nio-8888-exec-3]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:56:19.714[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:56:19.714[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:56:19.715[http-nio-8888-exec-5]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:56:34.489[http-nio-8888-exec-7]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==>  Preparing: select * from job_group
+2020-09-18 : 16:56:34.489[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id
+2020-09-18 : 16:56:34.489[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:56:34.489[http-nio-8888-exec-7]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-==> Parameters: 
+2020-09-18 : 16:56:34.489[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-==> Parameters: 
+2020-09-18 : 16:56:34.489[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:56:34.490[http-nio-8888-exec-7]DEBUGc.l.a.mapper.JobGroupMapper.getAllGroup-<==      Total: 1
+2020-09-18 : 16:56:34.490[http-nio-8888-exec-8]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1
+2020-09-18 : 16:56:34.490[http-nio-8888-exec-2]DEBUGc.l.apimanagement.mapper.JobMapper.getAllJob-<==      Total: 2
+2020-09-18 : 16:56:34.490[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job_group.id=?
+2020-09-18 : 16:56:34.490[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-==> Parameters: 1(Integer)
+2020-09-18 : 16:56:34.501[http-nio-8888-exec-7]DEBUGc.l.apimanagement.mapper.JobMapper.getJobByGroupId-<==      Total: 2
+2020-09-18 : 16:56:37.028[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==>  Preparing: UPDATE job SET `name` = ?, group_id = ?, cron = ?, parameter = ?, jar_path = ?, status = ? WHERE id = ?
+2020-09-18 : 16:56:37.028[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-==> Parameters: firstJob(String), 1(Integer), 0/6 * * * * ? (String), 测试参数(String), F:\GitRepository\apimanagement\jar\HelloJarJobFirst.jar(String), OPEN(String), 1(Integer)
+2020-09-18 : 16:56:37.032[http-nio-8888-exec-6]DEBUGc.l.apimanagement.mapper.JobMapper.updateJob-<==    Updates: 1
+2020-09-18 : 16:56:37.120[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==>  Preparing: SELECT job.id, job.name, job.cron, job.parameter, job.description, job.vm_param, job.jar_path, job.status, job_group.id group_id, job_group.name group_name, job_group.description group_description FROM job, job_group WHERE job.group_id = job_group.id AND job.id=?
+2020-09-18 : 16:56:37.120[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-==> Parameters: 1(Integer)
+2020-09-18 : 16:56:37.120[http-nio-8888-exec-4]DEBUGc.l.apimanagement.mapper.JobMapper.getJobById-<==      Total: 1

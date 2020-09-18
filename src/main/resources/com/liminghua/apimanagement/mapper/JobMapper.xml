@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liminghua.apimanagement.mapper.JobMapper">
+    <resultMap id="GroupMap" type="com.liminghua.apimanagement.entity.JobGroup">
+        <id property="id" column="group_id" />
+        <result property="name" column="group_name" />
+        <result property="description" column="group_description" />
+    </resultMap>
+    <resultMap id="JobMap" type="com.liminghua.apimanagement.entity.Job">
+        <id property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="cron" column="cron" />
+        <result property="parameter" column="parameter" />
+        <result property="description" column="description" />
+        <result property="vmParam" column="vm_param" />
+        <result property="jarPath" column="jar_path" />
+        <result property="status" column="status" />
+        <association property="group" javaType="com.liminghua.apimanagement.entity.JobGroup" resultMap="GroupMap"/>
+    </resultMap>
+    <select id="getAllJob"  resultMap="JobMap">
+    SELECT
+        job.id,
+        job.name,
+        job.cron,
+        job.parameter,
+        job.description,
+        job.vm_param,
+        job.jar_path,
+        job.status,
+        job_group.id group_id,
+        job_group.name group_name,
+        job_group.description group_description
+    FROM
+        job,
+        job_group
+    WHERE
+        job.group_id = job_group.id
+    </select>
+    <select id="getJobById"  resultMap="JobMap">
+    SELECT
+        job.id,
+        job.name,
+        job.cron,
+        job.parameter,
+        job.description,
+        job.vm_param,
+        job.jar_path,
+        job.status,
+        job_group.id group_id,
+        job_group.name group_name,
+        job_group.description group_description
+    FROM
+        job,
+        job_group
+    WHERE
+        job.group_id = job_group.id
+    AND
+        job.id=#{0}
+    </select>
+    <insert id="addJob" parameterType="com.liminghua.apimanagement.entity.Job">
+        INSERT INTO job
+        (
+        `name`,
+        group_id,
+        cron,
+        parameter,
+        description,
+        vm_param,
+        jar_path,
+        `status`
+        )
+        VALUES
+        (
+        #{Job.name},
+		#{Job.group.id},
+		#{Job.cron},
+		#{Job.parameter},
+		#{Job.description},
+		#{Job.vmParam},
+	    #{Job.jarPath},
+	    #{Job.status}
+	    )
+    </insert>
+    <update id="updateJob" parameterType="com.liminghua.apimanagement.entity.Job">
+    UPDATE job
+    <set>
+        <if test="Job.name != null and Job.name !=''and Job.name != 'undefined'and Job.name != 'null'">
+            `name` = #{Job.name},
+        </if>
+        <if test="Job.group != null">
+            <if test="Job.group.id != null">
+                group_id = #{Job.group.id},
+            </if>
+        </if>
+        <if test="Job.cron != null and Job.cron !=''and Job.cron != 'undefined'and Job.cron != 'null'">
+            cron = #{Job.cron},
+        </if>
+        <if test="Job.parameter != null and Job.parameter !=''and Job.parameter != 'undefined'and Job.parameter != 'null'">
+            parameter = #{Job.parameter},
+        </if>
+        <if test="Job.description != null and Job.description !=''and Job.description != 'undefined'and Job.description != 'null'">
+            description = #{Job.description},
+        </if>
+        <if test="Job.vmParam != null and Job.vmParam !=''and Job.vmParam != 'undefined'and Job.vmParam != 'null'">
+            vm_param = #{Job.vmParam},
+        </if>
+        <if test="Job.jarPath != null and Job.jarPath !=''and Job.jarPath != 'undefined'and Job.jarPath != 'null'">
+            jar_path = #{Job.jarPath},
+        </if>
+        <if test="Job.status != null and Job.status !=''and Job.status != 'undefined'and Job.status != 'null'">
+            status = #{Job.status}
+        </if>
+    </set>
+    WHERE
+        id = #{Job.id}
+    </update>
+    <select id="getJobByGroupId" resultMap="JobMap">
+    SELECT
+        job.id,
+        job.name,
+        job.cron,
+        job.parameter,
+        job.description,
+        job.vm_param,
+        job.jar_path,
+        job.status,
+        job_group.id group_id,
+        job_group.name group_name,
+        job_group.description group_description
+    FROM
+        job,
+        job_group
+    WHERE
+        job.group_id = job_group.id
+    AND
+        job_group.id=#{0}
+    </select>
+</mapper>
